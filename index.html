@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="keywords" content="YULA, energy drink, natural">
+    <meta name="description" content="YULA, The Go-To Natural Energy Drink with 100% Natural Plant">
+    <title> YULA </title>
+    <link href="fonts/Typeforge-Studio-Kapra-Neue-Thin.otf" rel="stylesheet">
+    <link href="fonts/Typeforge-Studio-Kapra-Neue-Regular.otf" rel="stylesheet">
+    <link href="fonts/Typeforge-Studio-Kapra-Neue-Bold.otf" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+    <main class="bg"> <!-- This class tag was created to put a background image -->
+      <header> <!-- This header will remain at the top of the website when the user is scrolling --->
+        <div id="yula-logo">
+          <img src="imgs/Macaw-Logo-1.png" alt="A small version of the YULA logo, with a black figure of parrot flying">
+        </div>
+        <nav>
+          <a href="#YULA"> YULA </a>
+          <a href="#Spirit"> Spirit </a>
+          <a href="#Products"> Products </a>
+          <a href="#Contact"> Contact </a>
+        </nav>
+      </header>
+
+      <div id="tagline">
+        <h1> 100% Plant Power Energy </h1>
+      </div>
+      
+      <div id="container"><!-- All of the information will be withing this section. This will overlap the background image when scrolling -->
+        
+        <section id="YULA">
+          <h2> YULA </h2>
+          <p> Everyone needs a little boost, whetever if it has been after a tough day at work, an exhausting workout, before starting a run or getting up from a rut. YULA is a new drink that can give you boost that consists of 100% purely natural energy. YULA is a combination of the words "tree" and "energy" from the ancient Quecha langugage. The energy drinks are made from ingredients that have been organically and sustainably sourced from farmers in South America. From a drink that contains nine simple ingredients including sparkling water and botanical extracts juices from tropical fruits, these drinks give you the same amount of energy as any other. With a small amount sugar and no taurine, this is enough to awaken your inner spirit and restore mind, body and soul. </p>
+
+					<div id="yula-video"><!-- A video is added to the website to make it interactive, it allows visitor to learn more about the company-->
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/jg56n72XNsA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+        </section>
+
+        <section id="Spirit">
+          <h2> Spirit of the Amazon </h2>
+          <p> Within everyone, there is an animal spirit that is awaiting to be unleashed, they have power that is untapped and unpredictable. Every person in the world has their animal spirit that is unique to them, just like their personality. YULA is able to harness the power from the Amazon rainforest and store in to a small can.</p> <p>Whenever you drink from the can, you allow the amazon to awaken the slumbering animal spirit that you have within yourself. With the unleashed spirit, you are feeling refreshed, unstopable and you have enough energy to do whatever you want: you have the energy to keep on running during your afternoon exercise or to keep on working on a personal project.</p>
+        </section>
+
+        <section id="Products">
+          <h2> Products </h2>
+          <div id="product-left">
+            <img src="imgs/Macaw.png" alt="yellow Yula can infront of a macaw with wing spread out">
+          </div> 
+          <p> Experience the taste of zesty lemon, the warming flavour of ginger and the refreshing, botanical notes of green tea and smoky green maté. Rooted in nature and 100% natural energy. Made with organic ingredients, sustainably sourced, without taurine, low in sugar and only 60 calories. A source of force to regain your focus, creativity, energy and inner spirit. </p>
+
+          <div id="Products-2"></div> <!-- Second row of products which will be images of a YULA can -->
+
+          <img class="products-left" src="imgs/Lunch_Can_Yellow.png" alt="yellow YULA can on a desk in between a laptop and a lunch bowl">
+
+          <img class="products-right" src="imgs/Throw_Can_Yellow.png" alt="yellow YULA can being thrown into the air">
+        </section>
+        
+        <section id="Contact">
+          <h2> Contact </h2>
+          <p> If you are interesting in purchasing any energy drinks, please fill out the form below. By providing us your details, YULA will deliver you the energy drinks you have chosen to your address.</p>
+
+          <form id="yula-contact" onsubmit="return validateContact()" name="ContactForm" method="post"><!-- Visitors can enter their personal details here to get energy drinks delivered to them-->
+            <h3> Name </h3><input type="text" placeholder="Enter your name" name="fname"><!-- name will be identified by javascript code-->
+            <h3> Surname </h3><input type="text" placeholder="Enter your surname" name="sname">
+            <h3> Gender </h3><input type="text" placeholder="Enter your gender" name="gender">
+            <h3> Date of Birth </h3><input type="date" name="dob">
+            <h3> Flavour </h3><input type="text" placeholder="Enter your favourite flavour" name="flavour">
+            <h3> Amount of Product</h3><input type="number" placeholder="Enter how many cans you would like to buy" name="product-amount">
+            <h3> Address </h3><input type="text" placeholder="Enter your address" name="address">
+            <h3> Postcode </h3><input type="text" placeholder="Enter your postcode" name="postcode">
+            <h3> Country </h3><input type="text" placeholder="Name of country you live in" name="country">
+            <button> Submit </button>
+          </form>
+        </section>
+
+				<section id="Contact-2">
+					<h3> Card Details </h3>
+					<p> Please enter your credit card details below. This will complete your process in the purchase of YULA energy drinks. We are currently in the process of creating a monthly subscription service, in which you can pay once and get a drink of your choice to your door.</p> 
+
+          <form id="card-details" onsubmit="return validateCard()" name="CardForm" method="post"> <!-- Visitors will enter their credit card details here -->
+            <h3> Card Number </h3><input type="number" placeholder="Enter card number" name="card-numb">
+            <h3> Card Type </h3><input type="text" placeholder="Enter card type" name="card-type">
+            <h3> Card Holder Name </h3><input type="text" placeholder="Enter the name on the card" name="card-name">
+            <h3> Expiry Date </h3><input type="date" name="exp-date">
+            <h3> Security Code </h3><input type="number" placeholder="Enter security number" name="sec-code">
+						<button> Submit Details </button>
+          </form>
+				</section>
+
+      </div>
+      <footer></footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
